@@ -1,0 +1,26 @@
+{
+  "name": "wkday06_framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:all": "playwright test",
+    "test:master": "playwright test --grep @master",
+    "test:sanity": "playwright test --grep @sanity",
+    "test:regression": "playwright test --grep @regression",
+    "test:authentication": "playwright test --grep Authentication",
+    "test:uat": "ENV=uat playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.2"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.6.0",
+    "csv-parse": "^7.0.2"
+  }
+}
